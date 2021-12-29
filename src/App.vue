@@ -3,8 +3,11 @@
         <div class="d-flex justify-content-center py-5">
             Weather app example for Nordcode
         </div>
-        <div class="d-flex w-100 py-5 my-5 justify-content-center align-items-center" v-if="loading">
+        <div class="d-flex w-100 py-5 my-5 flex-column justify-content-center align-items-center" v-if="loading">
             <div class="loader"></div>
+            <div class="helper-text">
+                Loading and filtering cities...
+            </div>
         </div>
         <router-view/>
     </div>
@@ -16,6 +19,12 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif !important;
+}
+
+.helper-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 </style>
