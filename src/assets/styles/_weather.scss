@@ -1,0 +1,124 @@
+.weather-todays-block {
+  width: 50%;
+  height: 450px;
+  z-index: 1;
+
+  @media (max-width: 990px) {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    height: 300px;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+
+    .todays-degrees {
+      font-size: 50px;
+      font-weight: 300;
+      position: relative;
+      line-height: 1;
+      span {
+        font-size: 10px;
+        position: absolute;
+        top: 6px;
+        right: -12px;
+      }
+    }
+
+    .forecast {
+      margin: 10px 0;
+
+      .city {
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .todays-weather {
+        font-size: 18px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+  }
+
+}
+
+.weekly-forecast {
+  width: 50%;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+  padding: 20px;
+
+  @media (max-width: 1200px) {
+    width: 75%;
+  }
+
+  @media (max-width: 990px) {
+    width: 100%;
+    padding: 20px 6px 10px;
+  }
+
+  .loader-block {
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    margin: 0;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .day-forecast-short {
+    width: max-content;
+    height: max-content;
+    padding: 8px 0;
+    .day-indicator {
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .degrees {
+      font-size: 15px;
+      width: max-content;
+
+      @media (max-width: 990px) {
+        font-size: 12px;
+        padding-top: 0;
+      }
+
+      .max {
+        font-weight: 300;
+      }
+
+      .min {
+        font-weight: 200;
+      }
+
+      span {
+        font-size: 4px !important;
+        position: absolute;
+        top: 4px;
+        right: -1px;
+      }
+    }
+
+    img {
+      @media (max-width: 990px) {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}

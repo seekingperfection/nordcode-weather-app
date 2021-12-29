@@ -1,0 +1,92 @@
+$white: #fff;
+$dark: #212121;
+$dark-op: rgba(33,33,33,0.2);
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.loader {
+  width:25px;
+  height:25px;
+  display:inline-block;
+  padding:0px;
+  border-radius:100%;
+  border:3px solid;
+  border-top-color: $dark;
+  border-bottom-color: rgba(160, 160, 160, 0.3);
+  border-left-color:$dark;
+  border-right-color:rgba(160, 160, 160, 0.3);
+  -webkit-animation: loader 1s ease-in-out infinite;
+  animation: loader 1s ease-in-out infinite;
+}
+@keyframes loader {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@-webkit-keyframes loader {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}
+
+.nordcode-input {
+  border: none;
+  border-bottom: 1px solid $dark-op;
+  padding: 6px 35px;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-icon-placement {
+  position: absolute;
+  top: 15px;
+  left: 6px;
+}
+
+.clear-icon-placement {
+  position: absolute;
+  top: 15px;
+  right: 6px;
+  cursor: pointer;
+}
+
+// scrollbar
+.custom-scrollbar::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: #F5F5F5;
+}
+
+.custom-scrollbar::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+  background-color: #F5F5F5;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+}
+
+
+// matching query highlighted
+.highlighted {
+  font-weight: 500;
+  font-size: 14px !important;
+}
+
+.form {
+  z-index: 10;
+}
+
+.form-group-block {
+  width: 50%;
+  @media (max-width: 990px) {
+    width: 100%;
+  }
+}
+
+
